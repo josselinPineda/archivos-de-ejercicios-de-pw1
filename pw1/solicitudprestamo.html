@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Formulario para solocitar prestamos estudiantiles</title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <h1>Solicitud de prestamo Estudiantil</h1>
+        <form action="=solicitudprestamo.html" method="get">
+           <label for="txtNombre" style="display: block; margin: 10px 0;">Nombre completo</label>
+           <input 
+                type="text" 
+                name="txtName" 
+                id="txtNombre"
+                placeholder="Nombre completo"
+                required
+            /> 
+            <br/>
+            <label for="txtEmail" style="display: block; margin: 10px 0;">Correo electrónico</label>
+            <input
+            type="email"
+            maxlength="128"
+            name="email"
+            id="txtEmail"
+            placeholder="correo@electro.com"
+            required
+            />
+            <br/>
+            <label for="txtNombre" style="display: block; margin: 10px 0;">Número de télefono</label>
+            <input 
+                type="text" 
+                name="txtNumero" 
+                id="txtNumero"
+                placeholder="Número de télefono"
+                required
+            /> 
+            <br/>
+            <label for="txtDireccion" style="display: block; margin: 10px 0;">Dirección Actual</label>
+            <input 
+            type="text"
+            name="Dirección"
+            id="txtDireccion"
+            placeholder="Dirección Completa"
+            required
+            />
+            <br/>
+            <label for="txtCiudad" style="display: block; margin: 10px 0;">Ciudad</label>
+            <input 
+            type="text"
+            name="Ciudad"
+            id="txtCiudad"
+            placeholder="Ciudad"
+            required
+            />
+            <br/>
+            <label for="cmbEstado" style="display: block; margin: 10px 0;">Estado</label>
+            <select name="Estado" id="cmbEstado">
+                <option value="SOL">Soltero(a)</option>
+                <option value="CAS">Casado(a)</option>
+                <option value="DIV">Divorsiado(a)</option>
+                <option value="VIU">Viudo(a)</option>
+            </select>
+            <br/>
+            <label for="txtCodigo" style="display: block; margin: 10px 0;">Código Postal</label>
+            <input 
+            type="text"
+            name="txtCodigo"
+            id="txtCodigo"
+            placeholder="Código Postal"
+            />
+            <br/>
+            <label style="display: block; margin: 10px 0;">Nivel de educación actual</label>
+            <input type="radio" id="oppreparatoria" value="Preparatoria" name="opnivel"/>
+            <label for="oppreparatoria">Preparatoria</label>
+            &nbsp;
+            <input type="radio" id="oplicenciatura" value="Licenciatura" name="opnivel"/>
+            <label for="oplicenciatura">Licenciatura</label>
+            &nbsp;
+            <input type="radio" id="opmaestria" value="Maestría" name="opnivel"/>
+            <label for="opmaestria">Maestría</label>
+            &nbsp;
+            <input type="radio" id="opdoctorado" value="Doctorado" name="opnivel"/>
+            <label for="opdoctorado">Doctorado</label>
+            <br/>
+            <label style="display: block; margin: 10px 0;">Programa de estudio</label>
+            <input type="radio" id="opingeniria" value="Ingeniría" name="opprograma"/>
+            <label for="opingeniria">Ingeniría</label>
+            &nbsp;
+            <input type="radio" id="opeconomia" value="Economía" name="opprograma"/>
+            <label for="opeconomia">Economía</label>
+            &nbsp;
+            <input type="radio" id="opartes" value="Artes" name="opprograma"/>
+            <label for="opartes">Artes</label>
+            &nbsp;
+            <input type="radio" id="opmedicina" value="Medicina" name="opprograma"/>
+            <label for="opmedicina">Medicina</label>
+            &nbsp;
+            <input type="radio" id="opderecho" value="Derecho" name="opprograma"/>
+            <label for="opderecho">Derecho</label>
+            <br/>
+            <label for="txtMonto" style="display: block; margin: 10px 0;">Monto del préstamo solicitado</label>
+            <input 
+            type="text"
+            name="txtMonto"
+            id="txtMonto"
+            placeholder="Catidad del Monto"
+            />
+            <br/>
+            <label for="txtPrestamo" style="display: block; margin: 10px 0;">Razón para solicitar el préstamo</label>
+            <br/>
+            <textarea 
+            name="prestamo" 
+            id="txtPrestamo" 
+            placeholder="solo aparece si no hay valor en el campo"
+        ></textarea>
+        <br/>
+            <button type="submit" name="btnEnviar" value="Btn1" style="display: block; margin: 10px 0;">Enviar</button>
+        </form>
+    </body>
+        
+</html>

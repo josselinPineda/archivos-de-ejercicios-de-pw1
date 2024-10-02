@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Formularios en HTML</title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <h1>Formularios</h1>
+        <form action="=forms.html" method="get">
+           <label for="txtNombre">Nombre completo</label>
+           <input 
+                type="text" 
+                name="txtName" 
+                id="txtNombre"
+                placeholder="Nombre completo"
+                required
+            /> 
+            <br/>
+            <label for="intEdad">Edad</label>
+            <input 
+            type="number"
+            min="1"
+            max="140"
+            name="Edad"
+            placeholder="Edad entre 1 y 140 años"
+            id="intEdad"
+            />
+            <br/>
+            <label for="txtEmail">Correo electronico</label>
+            <input
+            type="email"
+            maxlength="128"
+            name="email"
+            id="txtEmail"
+            placeholder="correo@electro.nico"
+            required
+            />
+            <br/>
+            <label>Opciones de color</label>
+            <input type="radio" id="opazul" value="Azul" name="opcolor"/>
+            <label for="opazul">azul</label>
+            &nbsp;
+            <input type="radio" id="oprojo" value="Rojo" name="opcolor"/>
+            <label for="oprojo">Rojo</label>
+            &nbsp;
+            <input type="radio" id="opverde" value="Verde" name="opcolor"/>
+            <label for="opverde">Verde</label>
+            <br/>
+            <label for="cmbCiudad">Ciudades</label>
+            <select name="cuidad" id="cmbCiudad">
+                <option value="TEG">Tegucigalpa</option>
+                <option value="CHO">Choluteca</option>
+                <option value="TEG">Tegucigalpa</option>
+                <option value="TEG">Tegucigalpa</option>
+                <option value="TEG">Tegucigalpa</option>
+            </select>
+            <br/>
+            <label>Intereses</label><br/>
+            <input type="checkbox" value="1" name="futbol" id="chkfutbol"/>
+            <label for="chkfutbol">Futbol</label><br/>
+            <input type="checkbox" value="2" name="volley" id="chkvolley"/>
+            <label for="chkvolley">volley</label><br/>
+            <br/>
+            <label for="txtBiografia">Biografia</label>
+            <br/>
+            <textarea 
+                name="Biografia" 
+                id="txtBiografia" 
+                placeholder="solo aparece si no hay valor en el campo"
+            ></textarea>
+            <br/>
+            <button type="submit" name="btnEnviar" value="Btn1">Enviar</button>
+            <button type="submit" name="btnRechazar" value="Btn2">Rechazar</button>
+        </form>
+    </body>
+        
+</html>
